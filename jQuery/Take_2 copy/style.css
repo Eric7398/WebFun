@@ -1,0 +1,295 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+header {
+    height: 50px; 
+    text-align: center;
+    vertical-align: center;
+    background-color: burlywood;
+    color: green;
+    font-size: 30px;
+    margin: auto;
+}
+
+.bgImg{
+    /* background-image: url("us-map.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    width: 1150px;
+    height: 10px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+
+.states {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    background-color: darkolivegreen;
+    font-style: bold;
+    height: 56px;
+    text-align: center;
+}
+
+nav a {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown-info {
+    display: none;
+}
+
+.dropdown-info:hover{
+    display:block;
+    height:100px;
+    width: 130px;
+    text-align: middle;
+}
+
+.dropbutton {
+    display: block;
+    height: 50px;
+    width: 130px;
+    border: none;
+    background-color: inherit;
+    color: white;
+    font-size: 14px;
+}
+
+.lawbutton {
+    display: block;
+    height: 50px;
+    width: 130px;
+    border: none;
+    background-color: inherit;
+    color: white;
+    font-size: 14px;
+    margin: auto;
+    text-align: center;
+}
+
+.dropdown-info a {
+    display: block;
+    font-size: 16px;
+}
+
+.dropbutton:hover {
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+nav a:hover, .dropdown:hover{
+    display: block;
+    text-align: center;
+    width: 130px;
+    background-color: rgb(53, 68, 28);
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 3px;
+}
+
+
+.main-content {
+    display: inline-block;
+    margin: 125px;
+    background-color: lightslategray;
+    outline: 3px solid black;
+    padding: 25px;
+    opacity: 100%;
+}
+
+.wa-laws {
+    background-image: url(wash2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height:300px;
+    width: 500px;
+    margin: auto;
+}
+
+.main-content ul {
+    list-style-type: none;
+}
+
+#wa-booze {
+    margin: auto;
+    text-align: center;
+    color: rgb(224, 224, 224);
+    font-weight: bold;
+    font-size: 20px;
+}
+#wa-weed {
+    margin: auto;
+    text-align: center;
+    color: rgb(224, 224, 224);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#ca-booze {
+    margin: auto;
+    text-align: center;
+    color: rgb(224, 224, 224);
+    font-weight: bold;
+    font-size: 20px;
+}
+#ca-booze {
+    margin: auto;
+    text-align: center;
+    color: rgb(224, 224, 224);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#id-booze {
+    margin: auto;
+    text-align: center;
+    color: rgb(224, 224, 224);
+    font-weight: bold;
+    font-size: 20px;
+}
+#id-booze {
+    margin: auto;
+    text-align: center;
+    color: rgb(224, 224, 224);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.or-laws {
+    background-image: url(oregon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height:300px;
+    width: 500px;
+    margin: auto;
+}
+
+#or-booze {
+    margin: auto;
+    text-align: center;
+    color: rgb(224, 224, 224);
+    font-weight: bold;
+    font-size: 20px;
+}
+#or-booze {
+    margin: auto;
+    text-align: center;
+    color: rgb(224, 224, 224);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 26px;
+    color: rgb(224, 224, 224);
+    letter-spacing: 5px;
+}
+
+#map{
+    width: 1200px; 
+    height: 1000px;
+    margin: -25px auto;
+}
+
+h1{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tooltip{
+    position: absolute;
+    border: 5px solid black;
+    box-shadow: 7px 7px 2px 0.5px black;
+    background: white;
+    color: black;
+    font-size: 24px;
+    padding: 10px;
+    opacity: 0.90;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+li{
+    margin: 0px 40px 0px 40px;
+    font-size: 50px;
+
+}
+li span{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul li #red::before {
+    content: "\25AA"; 
+    color: #FF6961; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 30px; 
+    font-size: 60px;
+    vertical-align: -20%;
+    margin-bottom: -20px;
+}
+
+ul li #darkgreen::before {
+    content: "\25AA"; 
+    color: #009F00; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 30px; 
+    font-size: 60px;
+    vertical-align: -20%;
+    margin-bottom: -20px;
+}
+
+ul li #lightgreen::before {
+    content: "\25AA"; 
+    color: #80FF80; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 30px; 
+    font-size: 60px;
+    vertical-align: -20%;
+    margin-bottom: -20px;
+}
+
+#mymap button{
+    margin-left: 520px;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Laws</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="raphael.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="jquery.usmap.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="bgImg">
+
+        <header>State Laws</header>
+        <div class="container">
+
+            <nav>
+                <div class="states">
+                    <div class="ca">
+                        <div class="dropdown">
+                            <button class="dropbutton">California
+                                <i class='fas fa-angle-down' style='font-size:16px'></i>
+                            </button>
+                            <div class="dropdown-info">
+                                <a id="ca-booze-button" href=""><i class="fas fa-cocktail" style="font-size:12px"></i>
+                                    Alcohol</a>
+                                <a id="ca-weed-button" href=""><i class="fas fa-cannabis" style='font-size:12px'></i>
+                                    Marijuana</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="id">
+                        <div class="dropdown">
+                            <button class="dropbutton">Idaho
+                                <i class='fas fa-angle-down' style='font-size:16px'></i>
+                            </button>
+                            <div class="dropdown-info">
+                                <a id="id-booze-button" href=""><i class="fas fa-cocktail" style="font-size:12px"></i>
+                                    Alcohol</a>
+                                <a id="ca-weed-button" href=""><i class="fas fa-cannabis" style='font-size:12px'></i>
+                                    Marijuana</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">
+                        <div class="dropdown">
+                            <button id="or-drop" class="dropbutton">Oregon</button>
+
+                        </div>
+                    </div>
+
+                    <div class="wa">
+                        <div class="dropdown">
+                            <button id="wa-drop" class="dropbutton">Washington
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </nav>
+
+        <div class="main-content">
+            <div class="ca-laws">
+                <h2>California</h2>
+                <div class="ca-booze-laws">
+                    <button id="ca-booze-button" class="lawbutton"><i class="fas fa-cocktail"
+                            style="font-size:16px"></i>Alcohol
+                        <i class='fas fa-angle-down' style='font-size:16px'></i>
+                    </button>
+                    <ul id="ca-booze">
+                        <li></li>
+                        <li>Where to Buy? - </li>
+                        <li>Sunday Sales? - Liquor Stores are open 12pm-5pm on Sundays.</li>
+                        <li>Bars open until 2AM.</li>
+                    </ul>
+                </div>
+                <div class="ca-weed-laws">
+                    <button id="ca-weed-button" class="lawbutton"><i class="fas fa-cannabis"
+                            style="font-size:16px"></i>Marijuana
+                        <i class='fas fa-angle-down' style='font-size:16px'></i>
+                    </button>
+                    <ul id="ca-weed">
+                        <li>Legal? Yes - legal to everyone 21+ for both medicinal and recreational use.</li>
+                        <li>Public? No - use in public prohibited!</li>
+                        <li>Times? - Most dispensaries seem close between 10PM - midnight, although there are some open
+                            24 hours.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="id-laws">
+                <h2>Idaho</h2>
+                <div class="id-booze-laws">
+                    <button id="id-booze-button" class="lawbutton"><i class="fas fa-cocktail"
+                            style="font-size:16px"></i>Alcohol
+                        <i class='fas fa-angle-down' style='font-size:16px'></i>
+                    </button>
+                    <ul id="id-booze">
+                        <li></li>
+                        <li>Where to Buy? - </li>
+                        <li>Sunday Sales? - Liquor Stores are open 12pm-5pm on Sundays.</li>
+                        <li>Bars open until 2AM.</li>
+                    </ul>
+                </div>
+                <div class="id-weed-laws">
+                    <button id="id-weed-button" class="lawbutton"><i class="fas fa-cannabis"
+                            style="font-size:16px"></i>Marijuana
+                        <i class='fas fa-angle-down' style='font-size:16px'></i>
+                    </button>
+                    <ul id="id-weed">
+                        <li>Legal? Yes - legal to everyone 21+ for both medicinal and recreational use.</li>
+                        <li>Public? No - use in public prohibited!</li>
+                        <li>Times? - Most dispensaries seem close between 10PM - midnight, although there are some open
+                            24 hours.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="or-laws">
+                <h2>Oregon</h2>
+                <div class="or-booze-laws">
+                    <button id="or-booze-button" class="lawbutton"><i class="fas fa-cocktail"
+                            style="font-size:16px"></i>Alcohol
+                        <i class='fas fa-angle-down' style='font-size:16px'></i>
+                    </button>
+                    <ul id="or-booze">
+                        <li></li>
+                        <li>Where to Buy? - </li>
+                        <li>Sunday Sales? - Liquor Stores are open 12pm-5pm on Sundays.</li>
+                        <li>Bars open until 2AM.</li>
+                    </ul>
+                </div>
+                <div class="or-weed-laws">
+                    <button id="or-weed-button" class="lawbutton"><i class="fas fa-cannabis"
+                            style="font-size:16px"></i>Marijuana
+                        <i class='fas fa-angle-down' style='font-size:16px'></i>
+                    </button>
+                    <ul id="or-weed">
+                        <li>Legal? Yes - legal to everyone 21+ for both medicinal and recreational use.</li>
+                        <li>Public? No - use in public prohibited!</li>
+                        <li>Times? - Most dispensaries seem close between 10PM - midnight, although there are some open
+                            24 hours.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="wa-laws">
+                <h2>Washington</h2>
+                <div class="wa-booze-laws">
+                    <button id="wa-booze-button" class="lawbutton"><i class="fas fa-cocktail"
+                            style="font-size:16px"></i>Alcohol
+                        <i class='fas fa-angle-down' style='font-size:16px'></i>
+                    </button>
+                    <ul id="wa-booze">
+                        <li></li>
+                        <li>Where to Buy? - </li>
+                        <li>Sunday Sales? - Liquor Stores are open 12pm-5pm on Sundays.</li>
+                        <li>Bars open until 2AM.</li>
+                    </ul>
+                </div>
+                <div class="wa-weed-laws">
+                    <button id="wa-weed-button" class="lawbutton"><i class="fas fa-cannabis"
+                            style="font-size:16px"></i>Marijuana
+                        <i class='fas fa-angle-down' style='font-size:16px'></i>
+                    </button>
+                    <ul id="wa-weed">
+                        <li>Legal? Yes - legal to everyone 21+ for both medicinal and recreational use.</li>
+                        <li>Public? No - use in public prohibited!</li>
+                        <li>Times? - Most dispensaries seem close between 10PM - midnight, although there are some open
+                            24 hours.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mymap">
+            <button>Bring up the Map</button>
+            <h1>Interactive Map</h1>
+            <h3>Hover over and click on each state to learn about their state laws!</h3>
+            <ul>
+                <li ><span id=darkgreen>Fully Legal</span></li>
+                <li ><span id =lightgreen>Medical Use Only</span></li>
+                <li><span id=red>illegal</span></li>
+            </ul>
+            <div id="clicked-state"></div>
+            <div id="map"></div>
+            <div id="tooltip"></div>
+            <div id="lawInfo"></div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

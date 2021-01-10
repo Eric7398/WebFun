@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    font-family: sans-serif;
+}
+h2{
+    font-family: sans-serif;
+    font-weight: 400;
+}
+#wrapper{
+    width: 1000px;
+    background-color: #062134;
+    padding: 10px 15px 5px 15px;
+    margin: 40px auto;
+}
+#header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header ul li{
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+#header ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+
+}
+#home{
+    color: #346A91;
+}
+
+#header h1{
+    color: white;
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+
+#title{
+    color: #1A96E4;
+}
+
+#innerwrap{
+    width: 1000px;
+    margin: 0px auto;
+    background-color: white;
+}
+#innerwrap #mainimg img{
+
+    width: 96.5%;
+    margin: 18px 10px 15px 18px;
+
+}
+.tabs{
+    width: 277px;
+    height: 210px;
+    background-color: #1468A8;
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px;
+    margin: 0px 0px 10px 18px;
+}
+#innerwrap .tabs img{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 15px;
+}
+#innerwrap .tabs h2{
+    display: inline-block;
+    color: white;
+    vertical-align: top;
+}
+
+#innerwrap .tabs P{
+    color: white;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+#innerwrap .tabs button{
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    background: linear-gradient(0deg, rgba(84,165,217,1) 0%, rgba(24,116,173,1) 50%, rgba(22,137,209,1) 52%, rgba(93,181,237,1) 100%);
+    color: white;
+    font-size: 15px;
+    margin-top: 28px;
+    border: 0px;
+}
+
+#lowertabs1, #lowertabs2, #lowertabs3{
+    width: 306px;
+    height: 230px;
+    display: inline-block;
+    padding: 15px 2px 2px 2px;
+    margin: 0px 0px 10px 18px;
+    vertical-align: top;
+}
+
+#lowertabs1 h1,#lowertabs3 h1{
+    font-size: 22px;
+    width: 315px;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin-bottom: 12px;
+    color: #263E4E;
+}
+
+#lowertabs1 img{
+    width: 305px;
+    height: 180px;
+}
+
+#lowertabs2 p{
+    color: #183143;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+#lowertabs2{
+    padding-top: 40px;
+    height: 205px;
+}
+#lowertabs2 a{
+    text-decoration: none;
+    color: #4A7EA4;
+    line-height: 80px;
+}
+
+#lowertabs3 #quote{
+	position: relative;
+    background: #daedff;
+    height: 110px;
+    width: 258px;
+    padding: 33px 20px 0px 20px;
+    font-size: 16px;
+    font-style: italic;
+    color: #314757;
+    line-height: 18px;
+}
+
+#lowertabs3 #quote p:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 9px solid transparent;
+	border-top-color: #daedff;
+	border-bottom: 0;
+	margin-left: -130px;
+	margin-bottom: -9px;
+}
+
+#lowertabs3 h6{
+    margin-top: 26px;
+    font-size: 12px;
+    color: #183143;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DAEDFF;
+    height: 53px;
+    border-top: 2px solid #50687B;
+    margin-top: 5px;
+}
+
+#footer ul li{
+    display: inline-block;
+}
+
+#footer ul li a{
+    text-decoration: none;
+    color: #447BA2;
+    margin-left: 30px;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+#footer ul li #footerhome a{
+    color: #A4CFF0;
+}
